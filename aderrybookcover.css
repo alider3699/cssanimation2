@@ -1,0 +1,153 @@
+
+html{
+    box-sizing: border-box;
+    font-family: "belgrano", serif;
+    background-color: #fe6c07;
+ 
+
+}
+
+*, *:before, *:after, {
+    box-sizing: inherit;
+}
+
+img{
+ 
+    max-width: 100%;
+}
+
+body{
+    background-color: #fe6c07;
+    font-family: 'Roboto Slab', serif;
+    
+}
+
+
+h1{
+    font-size: 300px;
+    text-align: center;
+    position: relative;
+    animation: animate__fadeInDown ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    z-index: 1;
+    
+}
+
+.wiggle{
+    transition-duration: 1s;
+}
+
+
+.wiggle:hover {
+  color: white;
+}
+
+@keyframes animate__fadeInDown {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+h2{
+    
+    font-size: 30px;
+    position: absolute;
+    left: 870px;
+    top: 200px;
+    animation-duration: 3s;
+     animation-name: slideright;
+    
+}
+
+
+
+@keyframes slideright {
+  from {
+    transform: translateX(-800px);
+  }
+
+  to {
+      transform: translateX(0px);
+  }
+}
+
+h5{
+    position: absolute;
+    top: 25px;
+    left: 870px;
+    font-size: 14px;
+
+}
+
+
+h4{
+    font-size; 19px; 
+    position: absolute;
+    top: 700px;
+    left: 870px;
+         animation-name: spin;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+    
+}
+
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+.vl {
+  border-left: 3px solid white;
+  height: 500px;
+      position: absolute;
+    left: 840px;
+    top: 150px;
+      animation-duration: 3s;
+     animation-name: slidedown;
+}
+
+@keyframes slidedown {
+    from{
+        transform: translateY(800px);
+    }
+    
+    t0{
+        transform: translateY(0px);
+    }
+}
+
+hr {width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 1px;
+    background-color:white; 
+    position:absolute; 
+    top:341px; 
+    left: 400px;  
+    animation-duration: 3s;
+     animation-name: slidein;
+    z-index: 0;
+  
+}
+
+
+@keyframes slidein {
+  from {
+    transform: translateX(800px);
+  }
+
+  to {
+      transform: translateX(0px);
+  }
+}
+
+
